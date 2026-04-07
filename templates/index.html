@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>🧠 AI Mental Health Assessment</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #8e9eab, #eef2f3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            width: 500px;
+            max-width: 90%;
+            animation: popUp 0.8s ease-out;
+        }
+
+        @keyframes popUp {
+            from {
+                transform: translateY(40px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0px);
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 120px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            resize: none;
+            box-sizing: border-box;
+            transition: box-shadow 0.3s;
+        }
+
+        textarea:focus {
+            box-shadow: 0 0 10px rgba(33, 150, 243, 0.4);
+            outline: none;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            border-radius: 8px;
+            margin-top: 15px;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out, background 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #388e3c;
+            transform: scale(1.05);
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #222;
+            background: #f1f8e9;
+            padding: 15px;
+            border-radius: 10px;
+            animation: slideUp 0.5s ease-in;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧠 AI Mental Health Assessment</h1>
+        <form action="/predict" method="POST">
+            <textarea name="user_input" placeholder="Describe how you're feeling..."></textarea><br>
+            <input type="submit" value="Assess">
+        </form>
+
+        {% if prediction %}
+        <div class="result">
+            <strong>Prediction:</strong> {{ prediction }}<br><br>
+            <strong>Explanation:</strong> {{ explanation }}
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
