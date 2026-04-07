@@ -24,11 +24,12 @@ The model is trained using NLP techniques and machine learning algorithms to cla
 2. Run the application:
    python app.py
 
-3. Open in browser:
+3. Open in browser (local):
    http://127.0.0.1:5000/
 
 ## Output
-(screenshots after running project)
+[input page] (images/input.png)
+[output page] (image/output.png)
 
 ## Future Improvements
 - Add chatbot support
