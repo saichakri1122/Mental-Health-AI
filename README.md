@@ -8,6 +8,12 @@ This project is a web-based AI application that predicts mental health condition
 - Machine learning model integration
 - Simple and interactive web interface
 
+### Input
+![Mental Health AI Input](images/input.png)
+
+### Output
+![Mental Health AI Output](images/ouput.png)
+
 ## Tech Stack
 - Python
 - Flask
@@ -27,11 +33,6 @@ The model is trained using NLP techniques and machine learning algorithms to cla
 3. Open in browser (local):
    http://127.0.0.1:5000/
 
-### Input
-![Mental Health AI Input](images/input.png)
-
-### Output
-![Mental Health AI Output](images/ouput.png)
 
 ## Future Improvements
 - Add chatbot support
