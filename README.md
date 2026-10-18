@@ -27,9 +27,11 @@ The model is trained using NLP techniques and machine learning algorithms to cla
 3. Open in browser (local):
    http://127.0.0.1:5000/
 
-## Output
-[input page] (images/input.png)
-[output page] (image/output.png)
+### Input
+![Mental Health AI Input](images/input.png)
+
+### Output
+![Mental Health AI Output](images/output.png)
 
 ## Future Improvements
 - Add chatbot support
