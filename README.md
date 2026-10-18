@@ -18,7 +18,7 @@ The AI-Based Mental Health Assessment System is a web application that analyzes 
 ![Mental Health AI Input](images/input.png)
 
 ### Prediction Output
-![Mental Health AI Output](images/output.png)
+![Mental Health AI Output](images/ouput.png)
 
 ## 🛠️ Tech Stack
 - **Programming Language:** Python
