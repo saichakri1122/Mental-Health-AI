@@ -31,7 +31,7 @@ The model is trained using NLP techniques and machine learning algorithms to cla
 ![Mental Health AI Input](images/input.png)
 
 ### Output
-![Mental Health AI Output](images/output.png)
+![Mental Health AI Output](images/ouput.png)
 
 ## Future Improvements
 - Add chatbot support
